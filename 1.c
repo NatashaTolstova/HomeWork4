@@ -6,3 +6,25 @@
 Данные на выходе: Сумма квадратов от первого введенного числа до
 второго
 */
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b, sum = 0;
+    scanf ("%d %d", &a, &b);
+
+    if (a > b)
+    {
+        printf ("(a <= b)");
+        return 1;
+    }
+
+    for (int i = a; i <= b; i++)
+    {
+        sum += i * i;
+    }
+
+    printf ("%d", sum);
+
+    return 0;
+}
